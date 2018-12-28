@@ -17,7 +17,7 @@ public class LoginPresenter {
     }
     public void login(HashMap<String,String> params){
         String mobile=params.get("mobile");
-        String password="1111111";
+        String password=params.get("password");
         if(!ValidatorUtil.isMobile(mobile)){
             if (iloginView!=null){
                 iloginView.mobileError("请输入合法手机号");
